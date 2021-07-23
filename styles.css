@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(254,252,252,255);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.top{
+    width:100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section .images{
+    width: 50%;
+    
+    position: relative;
+}
+section .text{
+    /* background-color: aqua; */
+    width:50%;
+}
+.carasouls{
+    width: 75%;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease;
+    
+    position: absolute;
+    top: 13%;
+    left: 17%;
+}
+.carasoul{
+    background-image: url("img1.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right: 10px;
+}
+section .images .carasoul button{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    width: 6%;
+    height: 10%;
+    border-radius: 50%;
+    position: relative;
+    opacity: .5;
+}
+section .images .carasoul button:hover{
+    opacity: 1;
+}
+.copies{
+    display: flex;
+    width: 75%;
+    height: 10%;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: absolute;
+    top: 83%;
+    left: 17%;
+}
+.copy{
+    width: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.copy1{background-image: url('img1.jpg');}
+.copy2{background-image: url('img2.jpg');}
+.copy3{background-image: url('img3.jpg');}
+.copy4{background-image: url('img4.jpg');}
+.copy5{background-image: url('img5.jpg');}
+.copy6{background-image: url('img6.jpg');}
+
+.text .heading{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight:medium;
+
+}
+.text .heading p{
+    font-size: 18px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.text{
+    padding-top:80px;
+    padding-left: 20px;
+}
+.text .heading .description{
+    font-size: 15px;
+    letter-spacing: 0;
+    margin-top: 50px;
+    width: 70%;
+}
+.text .rating .stars{
+    display: flex;
+}
+.text .rating .stars span{
+    font-size: small;
+    color: rgba(0,209,155,255);
+}
+.text .rating{
+    margin-top: 30px;
+}
+.text .rating p{
+    font-size: 11px;
+}
+.text .rating p span{
+    color: rgba(0,209,155,255);
+}
+.text .rating u{
+    font-size: 13px;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+.text .rating h4{
+    font-size: 30px;
+    letter-spacing: 0;
+}
+.text .order .fa{
+    font-size: 13px;
+    letter-spacing: 0;
+}
+.text .order button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.text .order .buttons .cart{
+    background-color: black;
+    border: none;
+    color: white;
+}
+.text .order .buttons .wishlist{
+    background-color: white;
+    border: black solid 1px;
+}
+.features{
+    height: 30%;
+    width: 100%;
+    padding-top: 100px;
+}
+.features .cards {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.features .cards .card .fa{
+    font-size: 20px;
+}   
+.features .cards .card .fa span{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.features .cards .card p{
+    margin-left: 35px;
+    font-size: small;
+}
+@media (max-width:1500px){
+    .text{
+        padding-top: 40px;
+    }
+    .text .heading p{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .text .heading .description{
+        margin-top: 20px;
+    }
+}
+@media (max-width:1050px) {
+    .text .rating{
+        margin-top: 20px;
+    }
+}
+@media (max-width:991px) {
+    .main{
+        height: 100%;
+    }
+    .top{
+        height: 100%;
+        flex-direction: column;
+    }
+    section .images{
+        width: 100%;
+        height: 80vh;
+    }
+    .carasoul{
+        padding: 10px;
+    }
+    .carasouls{
+        left: 13%;
+    }
+    .copies{
+        left: 13%;
+    }
+    section .text{
+        width: 100%;
+        
+    }
+    .text .heading{
+        width: 100%;
+    }
+    .text {
+        padding-left: 13%;
+    }
+    .features{
+        padding-top: 60px;
+    }
+    
+    .features .cards .card{
+        padding: 50px 30px 50px 30px;
+    }
+}
